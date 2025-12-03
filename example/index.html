@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DynamicFormsJS Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>DynamicFormsJS Example</h1>
+
+  <script type="module">
+    import { DynamicForm } from '../src/dynamic-form.js';
+    import { FORM_CONFIG } from './form_config.js';
+
+    // Instantiate the form
+    const myForm = new DynamicForm(FORM_CONFIG, document.body);
+
+    // Form submit event
+    myForm.onFormEvent("submit", (e) => {
+      e.preventDefault();
+      console.log("Form submitted!");
+      const formData = new FormData(myForm.getFormElement());
+      const data = Object.fromEntries(formData.entries());
+      console.log(data);
+    });
+
+    // Specific field event
+    myForm.onFieldEvent("email", "change", (e) => {
+      console.log("Email changed:", e.target.value);
+    });
+
+    // All fields event
+    myForm.onAllFieldsEvent("input", (e) => {
+      console.log(`Field ${e.target.name} changed to ${e.target.value}`);
+    });
+  </script>
+</body>
+
+</html>

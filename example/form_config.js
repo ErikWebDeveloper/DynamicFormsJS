@@ -1,0 +1,260 @@
+export const FORM_CONFIG = {
+  form: {
+    method: "POST",
+    action: "/register",
+    class: "my-form",
+    id: "exampleForm",
+  },
+  fields: [
+    {
+      tag: "input",
+      label: "Full Name",
+      atributtes: {
+        type: "text",
+        name: "full_name",
+        class: "",
+        placeholder: "Enter your full name",
+        id: "full_name",
+      },
+    },
+    {
+      tag: "input",
+      label: "Email Address",
+      atributtes: {
+        type: "email",
+        name: "email",
+        class: "",
+        placeholder: "Enter your email",
+        id: "email",
+      },
+    },
+    {
+      tag: "input",
+      label: "Password",
+      atributtes: {
+        type: "password",
+        name: "password",
+        class: "",
+        placeholder: "Create a password",
+        id: "password",
+      },
+    },
+    {
+      tag: "input",
+      label: "Website",
+      atributtes: {
+        type: "url",
+        name: "website",
+        class: "",
+        placeholder: "https://example.com",
+        id: "website",
+      },
+    },
+    {
+      tag: "input",
+      label: "Phone Number",
+      atributtes: {
+        type: "tel",
+        name: "phone",
+        class: "",
+        placeholder: "+1 555 123 4567",
+        id: "phone",
+      },
+    },
+    {
+      tag: "input",
+      label: "Age",
+      atributtes: {
+        type: "number",
+        name: "age",
+        class: "",
+        placeholder: "Enter your age",
+        min: 0,
+        max: 120,
+        step: 1,
+        id: "age",
+      },
+    },
+    {
+      tag: "input",
+      label: "Satisfaction Level",
+      atributtes: {
+        type: "range",
+        name: "satisfaction",
+        class: "",
+        min: 0,
+        max: 10,
+        step: 1,
+        id: "satisfaction",
+      },
+    },
+    {
+      tag: "input",
+      label: "Birth Date",
+      atributtes: {
+        type: "date",
+        name: "birth_date",
+        class: "",
+        id: "birth_date",
+      },
+    },
+    {
+      tag: "input",
+      label: "Favorite Color",
+      atributtes: {
+        type: "color",
+        name: "favorite_color",
+        class: "",
+        id: "favorite_color",
+      },
+    },
+    {
+      tag: "input",
+      label: "Preferred Time",
+      atributtes: {
+        type: "time",
+        name: "preferred_time",
+        class: "",
+        id: "preferred_time",
+      },
+    },
+    {
+      tag: "input",
+      label: "Month of Joining",
+      atributtes: {
+        type: "month",
+        name: "join_month",
+        class: "",
+        id: "join_month",
+      },
+    },
+    {
+      tag: "input",
+      label: "Week of Event",
+      atributtes: {
+        type: "week",
+        name: "event_week",
+        class: "",
+        id: "event_week",
+      },
+    },
+    {
+      tag: "textarea",
+      label: "Biography",
+      atributtes: {
+        name: "biography",
+        class: "",
+        placeholder: "Write something about yourself",
+        rows: 4,
+        id: "biography",
+      },
+    },
+    {
+      tag: "select",
+      label: "Country",
+      atributtes: {
+        name: "country",
+        class: "",
+        id: "country",
+        options: [
+          { value: "us", text: "United States" },
+          { value: "uk", text: "United Kingdom" },
+          { value: "ca", text: "Canada" },
+          { value: "au", text: "Australia" },
+        ],
+      },
+    },
+    {
+      tag: "input",
+      label: "Subscribe to Newsletter",
+      atributtes: {
+        type: "checkbox",
+        name: "subscribe",
+        class: "",
+        id: "subscribe",
+        checked: true,
+      },
+    },
+    {
+      tag: "input",
+      label: "Male",
+      atributtes: {
+        type: "radio",
+        name: "gender",
+        value: "male",
+        class: "",
+        id: "gender_male",
+      },
+    },
+    {
+      tag: "input",
+      label: "Female",
+      atributtes: {
+        type: "radio",
+        name: "gender",
+        value: "female",
+        class: "",
+        id: "gender_female",
+      },
+    },
+    {
+      tag: "input",
+      label: "Other",
+      atributtes: {
+        type: "radio",
+        name: "gender",
+        value: "other",
+        class: "",
+        id: "gender_other",
+      },
+    },
+    {
+      tag: "input",
+      label: "Search Query",
+      atributtes: {
+        type: "search",
+        name: "search",
+        class: "",
+        placeholder: "Search...",
+        id: "search",
+      },
+    },
+    {
+      tag: "input",
+      label: "Upload File",
+      atributtes: {
+        type: "file",
+        name: "file_upload",
+        class: "",
+        id: "file_upload",
+      },
+    },
+    {
+      tag: "button",
+      label: "",
+      atributtes: {
+        type: "submit",
+        class: "btn btn-primary",
+        text: "Submit",
+      },
+    },
+    {
+      tag: "button",
+      label: "",
+      atributtes: {
+        type: "reset",
+        class: "btn btn-secondary",
+        text: "Reset",
+      },
+    },
+    {
+      tag: "button",
+      label: "",
+      atributtes: {
+        type: "button",
+        class: "btn btn-info",
+        text: "Click Me",
+      },
+    },
+  ],
+};
