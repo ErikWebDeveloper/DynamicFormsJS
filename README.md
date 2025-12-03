@@ -2,6 +2,8 @@
 
 DynamicFormsJS is a lightweight and flexible JavaScript library to create **dynamic and fully customizable HTML forms** from a simple configuration object. It supports all input types, textareas, selects, checkboxes, radios, file uploads, buttons, and more. It also allows handling events like `submit`, `change`, and `input` easily.
 
+![Quick Demostration](./demo.gif)
+
 ---
 
 ## Features
